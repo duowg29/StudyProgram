@@ -1,0 +1,23 @@
+//doan code sau tra ve gia tri bao nhieu 
+//int total=0;
+//for(inti=0;i<11;i++)
+//{
+//	if(i%2==0)
+//	total+=1;
+//}else
+//{
+//	total+=2;
+//}
+//return total;
+
+#include <stdio.h>
+int main()
+{
+	int total=0;
+    for(int i=0;i<11;i++)
+    {
+	if(i%2==0)
+	total+=1; else total+=2;
+    }
+    printf ("%d", total);
+}
