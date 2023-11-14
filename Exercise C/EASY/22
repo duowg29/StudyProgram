@@ -1,4 +1,4 @@
-//doan code sau có van de gi for(var i=0;i<10;i--) printf(i)
+//doan code sau cÃ³ van de gi for(var i=0;i<10;i--) printf(i)
 #include <stdio.h>
 #include <stdlib.h>
 int main()
