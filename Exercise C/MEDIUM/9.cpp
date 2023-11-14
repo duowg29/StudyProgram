@@ -1,0 +1,40 @@
+//Viet ham tinh tong so cac phan tu cua chuoi a trong chuoi b
+#include <stdio.h>
+void sum()
+{
+	char a[100];
+	char b[100];
+	int x,y;
+	printf ("Nhap so luong mang a: ");
+	scanf("%d", &x);
+	
+	for (int m=0; m<x;m++)
+	{
+		printf ("Nhap phan tu a[%d]= ", m);
+		scanf("%d", &a[m]);
+	}
+	printf ("Nhap so luong mang b: ");
+	scanf("%d", &y);
+	for (int n=0; n<y;n++)
+	{
+		printf ("Nhap phan tu b[%d]= ", n);
+		scanf("%d", &b[n]);
+	}
+	int sum = 0;
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            if (a[i] == b[j]) {
+                sum++;
+                break;
+            }
+        }
+    }
+    printf("Tong so phan tu cua mang a trong mang b la: %d", sum);
+}
+int main()
+{
+    char a[100];
+	char b[100];
+	int x,y;
+	sum();
+}
