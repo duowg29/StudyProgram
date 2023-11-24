@@ -1,30 +1,30 @@
 //viet ham dem so luong so le trong 1 mang
 #include <stdio.h>
-void Dem(int &n, int dem)
+void odd(int num, int count)
 {
-	dem=0;
+	count=0;
 	int a[100];
 	printf ("Nhap so luong phan tu: ");
-	scanf ("%d", &n);
-	if(n<0)
+	scanf ("%d", &num);
+	if(num<0)
 	{ 
 	   printf("Vui long nhap lai so duong: ");
-	   scanf ("%d", &n);
+	   scanf ("%d", &num);
 	}
-	for (int i=0;i<n;i++)
+	for (int i=0;i<num;i++)
 	{
 		printf ("Nhap phan tu thu %d: ",i);
 		scanf ("%d", &a[i]);
 		if (a[i]%2!=0)
 		{
-			dem++;
+			count++;
 		}
 	}
-	printf ("so luong so le la: %d", dem);
+	printf ("so luong so le la: %d", count);
 }
 int main()
 {
 	int a[100];
-	int n,dem;
-	Dem(n,dem);
+	int num,count;
+	odd(num,count);
 }
