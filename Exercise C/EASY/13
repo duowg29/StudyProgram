@@ -1,15 +1,15 @@
 //viet ham dao nguoc thu cua mang
 #include <stdio.h>
-void daonguoc(int a[], int &n)
+void swap(int a[], int &num)
 {
 	printf ("Nhap so luong phan tu: ");
-	scanf("%d", &n);
-	if(n<0)
+	scanf("%d", &num);
+	if(num<0)
 	{ 
 	   printf("Vui long nhap lai so duong: ");
-	   scanf ("%d", &n);
+	   scanf ("%d", &num);
 	}
-	for (int i=0; i<n; i++)
+	for (int i=0; i<num; i++)
 	{
 		printf ("Nhap phan tu thu %d: ", i);
 		scanf("%d", &a[i]);
@@ -18,15 +18,15 @@ void daonguoc(int a[], int &n)
 int main()
 {
 	int a[100];
-	int n;
-	daonguoc(a, n);
+	int num;
+	swap(a, num);
 	printf ("Day vua nhap la: ");
-	for (int i=0;i<n;i++)
+	for (int i=0;i<num;i++)
 	{
 		printf ("%d", a[i]);
 	}
 	printf ("\nDay dao nguoc la: ");
-	for (int i=n-1;i>=0; i--)
+	for (int i=num-1;i>=0; i--)
 	{
 		printf ("%d", a[i]);
 	}
