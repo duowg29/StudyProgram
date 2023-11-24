@@ -1,23 +1,23 @@
 //tinh n giai thua
 #include <stdio.h>
-void giaithua()
+void factorial()
 {
-	int n=1;
+	int num=1;
 	int k;
-	printf ("Nhap so n: ");
+	printf ("Nhap so bat ky: ");
 	scanf("%d", &k);
-	if(n<0)
+	if(num<0)
 	{ 
 	   printf("Vui long nhap lai so duong: ");
-	   scanf ("%d", &n);
+	   scanf ("%d", &num);
 	}
 	for (int i=1;i<k+1;i++)
 	{
-		n=i*n;
+		num=i*num;
 	}
-	printf ("n!=%d", n);
+	printf ("Giai thua cua so do bang %d", num);
 }
 int main()
 {
-	giaithua();
+	factorial();
 }
