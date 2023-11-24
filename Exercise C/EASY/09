@@ -1,6 +1,6 @@
 //tim so du ma ko dung %
 #include <stdio.h>
-void timsodu()
+void remainder()
 {
 	int a,b,c;
 	printf ("Nhap a: ");
@@ -18,5 +18,5 @@ void timsodu()
 int main()
 {
 	int a,b,c;
-	timsodu();
+	remainder();
 }
