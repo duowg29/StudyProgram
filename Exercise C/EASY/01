@@ -17,5 +17,5 @@ int main ()
 	scanf ("%d", &b);
 	printf ("Nhap so c: ");
 	scanf ("%d", &c);
-	Hoandoi(a,b,c);
+	SwapValues(a,b,c);
 }
