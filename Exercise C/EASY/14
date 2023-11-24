@@ -1,34 +1,34 @@
 //Viet ham tim vi tri 1 so
 #include <stdio.h>
-int timvitri(int n, int k, int a[])
+int search(int num, int k, int a[])
 {
 	printf ("Nhap so luong phan tu: ");
-	scanf ("%d", &n);
-	if(n<0)
+	scanf ("%d", &num);
+	if(num<0)
 	{ 
 	   printf("Vui long nhap lai so duong: ");
-	   scanf ("%d", &n);
+	   scanf ("%d", &num);
 	}
-	for (int i=0; i<n; i++)
+	for (int i=0; i<num; i++)
 	{
 	printf ("Nhap phan tu thu %d: ", i);
 		scanf ("%d", &a[i]);
     }
     printf ("Nhap phan tu ban muon tim: ");
     scanf("%d", &k);
-    int bien=0;
+    int tmp=0;
     int m;
-   	for (int i=0; i<n; i++)
+   	for (int i=0; i<num; i++)
 	{
         if(a[i]==k)
         {
         	m=i;
-         	bien++;
+         	tmp++;
      	}
     }
-    if (bien>0)
+    if (tmp>0)
     {
-    	printf ("\nTim thay phan tu %d voi vi tri thu %d", k, m);
+    	printf ("\nTim thay phan tu %d voi vi tri thu %d", k, m+1);
 	}
     else
 	{
@@ -38,7 +38,7 @@ int timvitri(int n, int k, int a[])
 }
 int main()
 {
-	int n,k;
+	int num,k;
 	int a[100];
-    timvitri (n,k,a);
+    search(num,k,a);
 }
