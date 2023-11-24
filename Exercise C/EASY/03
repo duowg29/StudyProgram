@@ -1,11 +1,7 @@
 //viet ham kiem tra tinh dong nhat chan le cua 2 so
 #include <stdio.h>
-void Check (int &a, int &b)
+void Check (int a, int b)
 {
-	printf ("Nhap a: ");
-	scanf ("%d", &a);
-	printf ("Nhap b: ");
-	scanf ("%d", &b);
 	if(a%2==0&&b%2==0)
 	{
 		printf ("a va b deu la so chan");
@@ -17,6 +13,10 @@ void Check (int &a, int &b)
 }
 int main()
 {
-	int a,b;
+        int a,b;
+        printf ("Nhap a: ");
+	scanf ("%d", &a);
+	printf ("Nhap b: ");
+	scanf ("%d", &b);
 	Check(a,b);
 }
