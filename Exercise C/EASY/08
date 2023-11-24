@@ -1,13 +1,13 @@
 //viet ham kiem tra so nguyen to
 #include <stdio.h>
-void kiemtra()
+void check()
 {
-	int n;
+	int num;
     printf ("Nhap so: ");
-    scanf ("%d", &n);
-    for (int i=2;i<n;i++)
+    scanf ("%d", &num);
+    for (int i=2;i<num;i++)
 	{
-		if(n%i!=0)
+		if(num%i!=0)
 		{
 			printf ("La so nguyen to");
 		}else
@@ -17,6 +17,6 @@ void kiemtra()
 }
 int main()
 {
-	int n;
-	kiemtra();
+	int num;
+	check();
 }
