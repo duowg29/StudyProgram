@@ -1,40 +1,40 @@
 //Viet ham chia gia tri cua 2 mang so
 #include <stdio.h>
 #include <math.h>
-void chia()
+void divide()
 {
-	int n;
+	int num;
 	printf("Nhap vao so phan tu cua mang: ");
-	scanf("%d", &n);
-	if(n<0)
+	scanf("%d", &num);
+	if(num<0)
 	{
 		printf("Vui long nhap lai so duong: ");
-		scanf("%d", &n);
+		scanf("%d", &num);
 	}
-	float a[n];
-	float b[n];
-	float c[n];
+	float a[num];
+	float b[num];
+	float c[num];
 	printf("Nhap vao mang a:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf("Phan tu thu %d = ", i);
         scanf("%d", &a[i]);
     }
     printf("Nhap vao mang b:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf("Phan tu thu %d = ", i);
         scanf("%d", &b[i]);
     }
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < num; i++) 
 	{
 		c[i]=float(a[i]/b[i]);
     }   
 	printf("Mang c sau khi chia la: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf(" %.2f", c[i]);
     }
 }
 int main()
 {
-	int n;
-    chia();
+	int num;
+    divide();
 }
