@@ -1,7 +1,7 @@
 //viet ham cat string them vi tri bat dau va so ki tu
 #include <stdio.h>
 #include <string.h>
-void catchuoi()
+void cut_string()
 {
 	char str[100];
 	int a,b;
@@ -12,13 +12,13 @@ void catchuoi()
     scanf("%d", &a);
     printf("Nhap so ki tu can cat: ");
     scanf("%d", &b);
-    int dodai = strlen(str);
-    char ketqua[b+1];
-    strncpy(ketqua, str + a, b);
-    ketqua[b = '\0'];
-    printf("Chuoi sau khi cat la: %s\n", ketqua);
+    int length = strlen(str);
+    char string[b+1];
+    strncpy(string, str + a, b);
+    string[b = '\0'];
+    printf("Chuoi sau khi cat la: %s\n", string);
 }
 int main()
 {
-    catchuoi();
+    cut_string();
 }
