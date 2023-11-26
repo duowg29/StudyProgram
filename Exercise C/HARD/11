@@ -1,17 +1,17 @@
 //viet ham tra ve chu so cuoi cung khac 0 cua n giai thua
 #include <stdio.h>
-void giaithua()
+void factorial_num()
 {
-	int n;
+	int num;
 	printf("Nhap gia tri cua n: ");
-	scanf("%d", &n);
-	int giaithua=1;
-	for (int i=1;i<n+1;i++)
+	scanf("%d", &num);
+	int factorial=1;
+	for (int i=1;i<num+1;i++)
 	{
-		giaithua=giaithua*i;
+		factorial=factorial*i;
 	}
-	printf("n giai thua=%d", giaithua);
-	int tmp=giaithua;
+	printf("n giai thua=%d", factorial);
+	int tmp=factorial;
 	while(tmp % 10 == 0)
 	{
 		tmp /=10;
@@ -21,5 +21,5 @@ void giaithua()
 }
 int main()
 {
-	giaithua();
+	factorial_num();
 }
