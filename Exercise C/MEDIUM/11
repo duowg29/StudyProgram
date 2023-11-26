@@ -13,10 +13,3 @@ int main()
 	int random_val= random_num(a);
     printf ("Gia tri ngau nhien tu 0 den %d la: %d", a, random_val);
 }
-
-
-
-
-
-
-
