@@ -1,25 +1,25 @@
 //Viet ham tru gia tri cua 2 mang so
 #include <stdio.h>
-void tru()
+void minus()
 {
-	int n;
+	int num;
 	printf("Nhap vao so phan tu cua mang: ");
-	scanf("%d", &n);
+	scanf("%d", &num);
 	if(n<0)
 	{
 		printf("Vui long nhap lai so duong: ");
-		scanf("%d", &n);
+		scanf("%d", &num);
 	}
-	int a[n];
-	int b[n];
-	int c[n];
+	int a[num];
+	int b[num];
+	int c[num];
 	printf("Nhap vao mang a:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf("Phan tu thu %d = ", i);
         scanf("%d", &a[i]);
     }
     printf("Nhap vao mang b:\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf("Phan tu thu %d = ", i);
         scanf("%d", &b[i]);
     }
@@ -28,12 +28,12 @@ void tru()
 		c[i]=a[i]-b[i];
     }   
 	printf("Mang c sau khi tru la: ");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < num; i++) {
         printf(" %d", c[i]);
     }
 }
 int main()
 {
-    int n;
-    tru();
+    int num;
+    minus();
 }
