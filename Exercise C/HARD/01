@@ -10,7 +10,7 @@ int length (char a[])
 	}
 	return i-1;
 }
-void Daonguoc(char a[])
+void reverse(char a[])
 {
 	int n = length(a);
 	char *tmp = new char[n-1];
@@ -29,6 +29,5 @@ int main()
 	char a[100];
 	printf("Nhap chuoi a: ");
 	fgets(a,100,stdin);
-	int n;
-	Daonguoc(a);
+	reverse(a);
 }
