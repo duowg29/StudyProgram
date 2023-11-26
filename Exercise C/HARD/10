@@ -1,23 +1,23 @@
 //Viet ham xao tron cac phan tu trong mang
 #include <stdio.h>
 #include <stdlib.h>
-void xaotron()
+void shuffle()
 {
-	int n;
+	int num;
 	int a[100];
 	printf("Nhap so luong phan tu trong mang:");
-	scanf("%d", &n);
-	for (int i=0;i<n;i++)
+	scanf("%d", &num);
+	for (int i=0;i<num;i++)
 	{
 		printf("Nhap phan tu %d: ",i);
 		scanf("%d", &a[i]);
 	}
 	printf("\nMang truoc khi duoc xao tron: ");
-	for (int i=0;i<n;i++)
+	for (int i=0;i<num;i++)
 	{
 		printf("%d ",a[i]);
 	}
-	for (int i=0;i<n;i++)
+	for (int i=0;i<num;i++)
 	{
 		int j = rand() % (i + 1);
 		int tmp = a[i];
@@ -25,7 +25,7 @@ void xaotron()
 		a[j]=tmp;
 	}
 	printf("\nMang sau khi duoc xao tron: ");
-	for (int i=0;i<n;i++)
+	for (int i=0;i<num;i++)
 	{
 		printf("%d ",a[i]);
 	}
@@ -33,6 +33,6 @@ void xaotron()
 }
 int main()
 {
-	xaotron();
+	shuffle();
 }
 
