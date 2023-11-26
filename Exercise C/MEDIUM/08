@@ -1,11 +1,11 @@
 //Viet ham tim vi tri mot chuoi trong mot chuoi khac 
 #include <stdio.h>
 #include <string.h>
-void tim()
+void search()
 {
 	char a[100];
 	char b[100];
-	int vitri;
+	int pos;
 	printf("Nhap chuoi ki tu ban dau: ");
 	gets(b);
 	printf ("Chuoi can tim la: ");
@@ -13,8 +13,8 @@ void tim()
 	char *p=strstr(b,a);
 	if (p != NULL) 
 	{
-    vitri = p - b + 1;
-    printf("Chuoi can tim duoc tim thay tai vi tri %d \n",vitri);
+    pos = p - b + 1;
+    printf("Chuoi can tim duoc tim thay tai vi tri %d \n",pos);
     } else
 	{
         printf("Chuoi can tim khong duoc tim thay\n");
@@ -24,6 +24,6 @@ int main()
 {
 	char a[100];
 	char b[100];
-	int vitri;
-	tim();
+	int pos;
+	search();
 }
