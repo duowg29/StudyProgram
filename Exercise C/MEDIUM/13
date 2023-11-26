@@ -1,27 +1,27 @@
 //Viet ham tinh so tien khach phai tra khi vao nha nghi dua theo gio khach vao va gio khach ra
 #include <stdio.h>
-void tinhtoan()
+void bill()
 {
-	int tongtien=0;
-	int giovao,giora,sogio;
+	int money=0;
+	int hrin,hrout,time;
 	printf ("Nhap gio vao: ");
-	scanf ("%d", &giovao);
+	scanf ("%d", &hrin);
 	printf ("Nhap gio ra: ");
-	scanf ("%d", &giora);
-	sogio=giora + (24-giovao);
-	if(sogio<=2)
+	scanf ("%d", &hrout);
+	time=hrout + (24-hrin);
+	if(time<=2)
 	{
-		tongtien=70*sogio;
-	}else tongtien=50*sogio;
-	if (giora>= 8)
+		money=70*time;
+	}else money=50*time;
+	if (hrout>= 8)
 	{
-		tongtien+=160;
-		int themgio = giora - 8;
-		tongtien+= themgio*40;
+		money+=160;
+		int extra = hrout - 8;
+		money+= extra*40;
 	}
-	printf ("So tien khach phai tra la: %d", tongtien);
+	printf ("So tien khach phai tra la: %d", money);
 }
 int main()
 {
-	tinhtoan();
+	bill();
 }
