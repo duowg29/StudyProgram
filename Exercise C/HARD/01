@@ -1,7 +1,7 @@
 //viet ham dao nguoc ki tu tung tu trong mot cau
 #include <stdio.h>
 #include <string.h>
-int length (char a[])
+int length(char a[])
 {
 	int i = 0;
 	while (a[i] != NULL)
