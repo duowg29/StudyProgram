@@ -1,6 +1,6 @@
 //viet ham tinh so tien it nhat de quy doi
 #include <stdio.h>
-void change()
+void least()
 {
 	int cnt=0;
 	int m;
@@ -16,5 +16,5 @@ void change()
 }
 int main()
 {
-	change();
+	least();
 }
