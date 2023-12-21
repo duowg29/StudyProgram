@@ -1,7 +1,7 @@
 //Tinh tong so lan xuat hien cua string a trong string b
 #include <stdio.h>
 #include <string.h>
-void exists()
+void count_exists()
 {
 	int cnt=0;
 	char a[100];
@@ -22,5 +22,5 @@ void exists()
 }
 int main()
 {
-	exists();
+	count_exists();
 }
