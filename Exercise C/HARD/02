@@ -1,7 +1,7 @@
 //viet ham random tra ve gia tri random trong khoang a,b
 #include <stdio.h>
 #include <stdlib.h>
-int randomnumber(int a, int b)
+int random_number(int a, int b)
 {
 	printf("Nhap a: ");
 	scanf("%d",&a);
@@ -13,5 +13,5 @@ int randomnumber(int a, int b)
 int main()
 {
 	int a,b;
-	randomnumber(a,b);
+	random_number(a,b);
 }
