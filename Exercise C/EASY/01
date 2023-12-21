@@ -1,6 +1,6 @@
 //Viet ham hoan doi gia tri cua 3 so a, b va c voi nhau 
 #include <stdio.h>
-void SwapValues(int a, int b, int c)
+void swap_values(int a, int b, int c)
 {
 	int k = a;
 	a = b;
