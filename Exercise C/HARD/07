@@ -12,7 +12,7 @@ void chuc(int money)
     printf("%s ", mot[money]);
     } else if (money < 20)
     printf("%s ", muoi[money - 10]); 
-	else {
+    else {
         int ten = money / 10;
         int one = money % 10;
         printf("%s muoi ", muoi[ten]);
@@ -22,9 +22,8 @@ void chuc(int money)
 }
 void tramnghin(int money)
 {
-	int hundred = money / 100;
+    int hundred = money / 100;
     int ten = money % 100;
-
     if (hundred != 0) {
         printf("%s tram ", mot[hundred]);
     }
@@ -57,6 +56,6 @@ int main()
 	int tmp;
 	printf("Nhap so tien(Dong): ");
 	scanf("%d", &tmp);
-    read(tmp);
+        read(tmp);
 	return 0;
 }
